@@ -31,6 +31,6 @@ Requerimientos tercera entrega:
 - Uso de SASS
 - Uso de CEO
 - Se entrega subiendo 2 links (Github y Github pages)
-- No subir la carpeta de node models (usar git ignore)
+- No subir la carpeta de node_modules (usar git ignore)
 - Todo estructurado para celular, tablets y desktop
 - En lo posible sustituir los lorems en esta entrega (se puede dejar para la entrega final)
