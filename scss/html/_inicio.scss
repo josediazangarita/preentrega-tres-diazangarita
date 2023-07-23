@@ -1,0 +1,11 @@
+/* estilos del html inicio */
+.contenedor-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    img{
+        border-radius: 20px;
+    }
+}

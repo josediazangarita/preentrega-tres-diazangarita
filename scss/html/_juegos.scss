@@ -1,0 +1,11 @@
+/* estilos del html juegos */
+.contenedor-juegos{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 20px;
+    img{
+        border-radius: 20px;
+    }
+
+}

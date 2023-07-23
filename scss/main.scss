@@ -1,0 +1,90 @@
+/* reset y fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+// import de variables
+@import "utilidades/variables";
+
+/* estilos generales */
+body {
+    background-color: $color-azul-principal;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    nav{
+        background-color: $color-magenta;
+        border-radius: 20px;
+        min-width: 80%;
+        margin: auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $color-azul-terciario !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+p{
+    color: $color-azul-terciario;
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 266px);
+    h1{
+        text-align: center;
+        margin: 20px 20px;
+        color: $color-azul-terciario;
+        font-size: clamp(40px,8vw,60px);
+       
+    }
+    h2{
+        margin: 10px;
+        text-align: center;
+        color: $color-azul-terciario;
+        font-size: clamp(10px,8vw,30px);
+    } 
+}
+
+/* estilos del footer */
+
+.texto-footer{
+    text-align: center;
+    padding: 20px 20px;
+    color: $color-azul-secundario;
+
+}
+
+// estilos de inicio
+@import "html/inicio";
+
+// estilos del html noticias
+@import "html/noticias";
+
+// estilos del html juegos
+@import "html/juegos";
+
+// estilos del html plataformas
+@import "html/plataformas";
+
+//estilos del html contacto
+@import "html/contacto";
+
+// propiedades de media query
+@import "utilidades/mediaquery";

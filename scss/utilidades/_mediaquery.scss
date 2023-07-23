@@ -1,0 +1,84 @@
+/* propiedades de media query */
+@media screen and (min-width:768px){
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 20px;
+    }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(2, 40px);
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
+
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 200px);
+        margin: 20px;
+        grid-gap: 20px;
+}    
+
+    iframe {
+        width: 90%;
+        max-width: 600px;
+        max-height: 450px;
+}
+
+}
+
+    
+/* se crea el siguiente media queries por el breakpoint de la barra de navegacion de bootstrap y poder darle estilos propios*/
+
+@media screen and (min-width:992px){
+ 
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    
+    .contenedor-juegos{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 20px;
+    }
+
+    .botones-plataformas{
+        display: grid;
+        grid-template-columns: repeat(6, 110px);
+        grid-template-rows: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        gap: 10px;
+}
+
+    .carousel-plataformas{
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 200px;
+        margin: 20px;
+        grid-gap: 20px;
+    }    
+
+    main iframe{
+            width: 90%;
+            max-width: 800px;
+            max-height: 450px;
+}
+}
