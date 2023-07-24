@@ -1,6 +1,9 @@
 // import de variables
 @import "../utilidades/variables";
 
+// import mixin
+@import "../utilidades/mixin";
+
 /* estilos del html juegos */
 .contenedor-juegos{
     display: grid;

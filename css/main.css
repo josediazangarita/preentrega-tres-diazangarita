@@ -18,7 +18,7 @@ header {
   header nav {
     background-color: #f6135a;
     border-radius: 20px;
-    min-width: 8%;
+    min-width: 80%;
     margin: auto; }
   header .navbar-nav {
     font-size: 20px; }
@@ -52,7 +52,7 @@ main {
     font-size: clamp(10px, 6vw, 30px); }
 
 /* estilos del footer */
-.texto-footer {
+footer .texto-footer {
   text-align: center;
   padding: 20px 20px;
   color: #0191f2; }

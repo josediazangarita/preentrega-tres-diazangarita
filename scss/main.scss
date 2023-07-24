@@ -1,3 +1,9 @@
+// import de variables
+@import "utilidades/variables";
+
+// import de mixin
+@import "utilidades/mixin";
+
 /* reset y fuente */
 * {
     margin: 0;
@@ -6,24 +12,15 @@
     font-family: 'Fredoka', sans-serif;
 }
 
-// import de variables
-@import "utilidades/variables";
-
 /* estilos generales */
-body {
-    background-color: $color-azul-principal;
-    background-image: linear-gradient(43deg, #001524 0%, #0e436f 30%, #001524 66%);
-}
+body { @include estilos-body; }
 
 header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column;
     nav{
         background-color: $color-magenta;
         border-radius: 20px;
-        min-width: 8%;
+        min-width: 80%;
         margin: auto;
     }
         .navbar-nav{
@@ -32,49 +29,19 @@ header{
     }
 }
 
-a{
-    text-decoration: none;
-    color: $color-azul-terciario !important;
-    font-size: 16px;
-    text-align: center;
-}
+a{ @include enlaces; }
 
-p{
-    color: $color-azul-terciario;
-    margin-top: 10px;
-    margin-bottom: 0;
-    
-}
+p{ @include parrafos; }
 
 main{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column;
     min-height: calc(100vh - 210px);
-    h1{
-        text-align: center;
-        margin: 10px;
-        color: $color-azul-terciario;
-        font-size: clamp(30px,8vw,60px);
-       
-    }
-    h2{
-        margin: 10px;
-        text-align: center;
-        color: $color-azul-terciario;
-        font-size: clamp(10px,6vw,30px);
-    } 
+    h1{ @include titulos; }
+    h2{ @include subtitulos; } 
 }
 
 /* estilos del footer */
-
-.texto-footer{
-    text-align: center;
-    padding: 20px 20px;
-    color: $color-azul-secundario;
-
-}
+footer .texto-footer{ @include estilos-texto-footer; }
 
 // estilos de inicio
 @import "html/inicio";

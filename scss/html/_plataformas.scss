@@ -1,6 +1,9 @@
 // import de variables
 @import "../utilidades/variables";
 
+// import mixin
+@import "../utilidades/mixin";
+
 /* estilos del html plataformas */
 .botones-plataformas{
     display: grid;
