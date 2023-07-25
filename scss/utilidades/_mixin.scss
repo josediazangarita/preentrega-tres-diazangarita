@@ -20,17 +20,11 @@
     text-align: center;
 }
 
-// mixin parrafos
-@mixin parrafos{
-    color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
 // mixin titulos y subtitulos
 @mixin titulos{
     text-align: center;
     margin: 10px;
+    padding: 20px;
     color: aliceblue;
     font-size: clamp(30px, 8vw, 60px);
 }
@@ -40,6 +34,13 @@
     text-align: center;
     color: aliceblue;
     font-size: clamp(10px, 6vw, 30px);
+}
+
+// mixin parrafos
+@mixin parrafos{
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 @mixin grid-base-centrado{

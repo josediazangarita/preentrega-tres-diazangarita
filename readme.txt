@@ -28,7 +28,7 @@ Requerimientos segunda entrega:
 
 Requerimientos tercera entrega:
 
-- Uso de SASS (nesting, import, variables, mixin)
+- Uso de SASS (nesting, import, variables, mixin, extend)
 - Uso de CEO
 - Se entrega subiendo 2 links (Github y Github pages)
 - No subir la carpeta de node_modules (usar git ignore)
